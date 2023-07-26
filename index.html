@@ -45,11 +45,11 @@
         <!-- navbar section -->
         <nav>
             <div
-                class="navbar lg:justify-between lg:bg-primary  lg:px-12 lg:py-8 rounded-full lg:max-w-screen-xl mx-auto lg:h-[120px]">
+                class="navbar md:justify-between lg:justify-between md:bg-primary lg:bg-primary  lg:px-12 lg:py-8 rounded-full lg:max-w-screen-xl mx-auto lg:h-[120px]">
                 <div class="">
                     <div class="">
                         <div>
-                            <ul class="lg:flex hover:cursor-pointer gap-7 text-white hidden">
+                            <ul class="md:flex lg:flex hover:cursor-pointer gap-7 text-white hidden">
                                 <li><a>Home</a></li>
                                 <li><a>About Us</a></li>
                                 <li><a>Shop</a></li>
@@ -63,7 +63,7 @@
                     <a class="text-start normal-case text-xl lg:text-4xl lg:text-white font-bold">Fruit Burst</a>
                 </div>
                 <div class="">
-                    <div class="bg-white p-5 items-center w-[350px] justify-between rounded-full hidden lg:flex ">
+                    <div class="bg-white p-5 items-center md:w-[250px] lg:w-[350px] justify-between rounded-full hidden md:flex lg:flex ">
                         <input class="border-none bg-none" type="text" placeholder="Search Here">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -74,7 +74,7 @@
 
                 </div>
                 <div class="relative">
-                    <div class="dropdown dropdown-left start-60 lg:hidden">
+                    <div class="dropdown dropdown-left start-60 md:hidden lg:hidden">
                         <label tabindex="0" class=" m-1"><i class="fa-solid fa-bars" style="color: #000000;"></i></label>
                         <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
                           <li><a>Home</a></li>
@@ -468,7 +468,7 @@
                         <h1 class="mb-5 text-5xl font-extrabold text-white">Meet the team section</h1>
                         <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece
                             of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
-                        <div class="flex-row space-y-3 lg:flex gap-36 text-center mt-12">
+                        <div class="flex-row space-y-3 md:grid md:grid-cols-2 md:gap-6 lg:flex gap-36 text-center mt-12">
                             <div class="">
                                 <img class="mx-auto mb-5" src="./images/member1.png" alt="">
                                 <h5 class="text-xl font-bold">Awlad Hossain</h5>
@@ -604,8 +604,8 @@
                 </div>
             </div>
         </section>
-        <!-- why choose us section for mobile view -->
-        <section class="p-4 md:hidden lg:hidden">
+        <!-- why choose us section for mobile and tablet view -->
+        <section class="p-4  lg:hidden">
             <!-- section title -->
             <div class="text-center mt-36">
                 <h2 class="font-extrabold text-5xl mb-3">Why Choose Us</h2>
@@ -614,11 +614,11 @@
             </div>
             <div class="grid grid-cols-1 justify-center gap-8  items-center mt-12">
                 <!-- image part -->
-                <div class="">
+                <div class="md:mx-auto">
                     <img src="./images/whychoose1.png" alt="">
                 </div>
 
-                <div class="">
+                <div class="md:grid md:grid-cols-2 md:gap-4">
                     <!-- details-1 -->
                     <div class="flex-row items-center gap-6 mb-10">
                         <div class="bg-gray-300 rounded-full w-[50px] mx-auto">
@@ -652,9 +652,7 @@
                             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
                     </div>
-                </div>
-                <div class="">
-                    <!-- details-1 -->
+                    <!-- details-4 -->
                     <div class="flex-row items-center gap-6 mb-10">
                         <div class="bg-gray-300 rounded-full w-[50px] mx-auto">
                             <i class="fa-solid fa-apple-whole p-4" style="color: #000000;"></i>
@@ -666,7 +664,7 @@
                         </div>
 
                     </div>
-                    <!-- details-2 -->
+                    <!-- details-5 -->
                     <div class="flex-row items-center gap-6 mb-10">
                         <div class="bg-gray-300 rounded-full w-[50px] mx-auto">
                             <i class="fa-solid fa-ice-cream p-4" style="color: #000000;"></i>
@@ -678,7 +676,7 @@
                         </div>
 
                     </div>
-                    <!-- details-3 -->
+                    <!-- details-6 -->
                     <div class="flex-row items-center gap-6 mb-10">
                         <div class="bg-gray-300 rounded-full w-[50px] mx-auto">
                             <i class="fa-regular fa-thumbs-up p-4" style="color: #000000;"></i>
@@ -691,6 +689,7 @@
 
                     </div>
                 </div>
+                
             </div>
         </section>
 
@@ -708,7 +707,7 @@
             </div>
         </div>
         <div class="text-white">
-            <ul class="text-center grid grid-cols-4 gap-2 lg:gap-14 lg:flex">
+            <ul class="text-center grid grid-cols-4 gap-2 md:gap-10 lg:gap-14 md:flex lg:flex">
                 <li><a href="">Home</a></li>
                 <li><a href="">About Us</a></li>
                 <li><a href="">Shop</a></li>
